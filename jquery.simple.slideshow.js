@@ -17,7 +17,7 @@
  * @param object settings Customize your slideshow
  * @return object
  */
-$.fn.slideshow = function(options) {
+$.fn.simpleSlideshow = function(options) {
 	return this.each(function() {
 		var slideshow =
 		{

@@ -1,4 +1,4 @@
-# jquery-slideshow
+# jquery-simple-slideshow
 
 This is a simple jQuery-based slideshow. It will not require a pre-defined complex HTML structure.
 All that is needed is for 1 original <img> to be added to the HTML. 2 Clones will be created at exactly the place of the original image, and will start iterating the images according to the desired config.
@@ -37,9 +37,9 @@ Looks like:
     <a href="#" id="next">Next</a>
     
     <script src="jquery.min.js" /> <!-- path to jQuery -->
-    <script src="jquery.slideshow.js" /> <!-- path to slideshow script -->
+    <script src="jquery.simple.slideshow.js" /> <!-- path to slideshow script -->
     <script>
-    	$('#slideshow').slideshow({
+    	$('#slideshow').simpleSlideshow({
     		fadeTime: 10000,
     		fadeSpeed: 1000,
     		bindPrevious: $('#prev'), // bind button to previous image
@@ -71,9 +71,9 @@ Looks like:
     <a href="#" class="controls">3</a>
     
     <script src="jquery.min.js" /> <!-- path to jQuery -->
-    <script src="jquery.slideshow.js" /> <!-- path to slideshow script -->
+    <script src="jquery.simple.slideshow.js" /> <!-- path to slideshow script -->
     <script>
-    	$('#slideshow').slideshow({
+    	$('#slideshow').simpleSlideshow({
     		bindSpecific: $('.controls'), // bind image-specific buttons
     	});
     </script>
