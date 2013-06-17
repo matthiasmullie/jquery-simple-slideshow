@@ -5,9 +5,9 @@ All that is needed is for 1 original <img> to be added to the HTML. 2 Clones wil
 
 ## Options
 
-* **fadeTime** (5000)
+* **fadeTime** *(5000)*
 The duration for which an image will be displayed, in milliseconds
-* **fadeSpeed** ('normal')
+* **fadeSpeed** *('normal')*
 The animation time during which the image will fade out, in milliseconds
 * **bindPrevious**
 jQuery element(s) that, when clicked, should display the previous image
@@ -19,7 +19,7 @@ jQuery element(s) that, when clicked, should display a specific image. First ele
 Array of paths for image to be displayed. Paths can also be defined via the slideshow element's data-images attribute.
 * **links**
 Optional array of links to make images clickable, tied by index to the array of images. Paths can also be defined via the slideshow element's data-links attribute.
-* **random** (false)
+* **random** *(false)*
 Randomize the images' display order
 
 ## Example 1
@@ -30,10 +30,12 @@ Randomize the images' display order
 * 3 images, all clickable to 3 links
 * random images
 
+Looks like:
+
     <img id="slideshow" src="path/to/initial/file.jpg" />
     <a href="#" id="prev">Previous</a>
     <a href="#" id="next">Next</a>
-
+    
     <script src="jquery.min.js" /> <!-- path to jQuery -->
     <script src="jquery.slideshow.js" /> <!-- path to slideshow script -->
     <script>
@@ -61,11 +63,13 @@ Randomize the images' display order
 * Image-specific controls
 * Image paths tossed in as data-attribute
 
+Looks like:
+
     <img id="slideshow" src="path/to/initial/file.jpg" data-images="path/to/initial/file.jpg,path/to/second/file.jpg,path/to/another/file.jpg" />
     <a href="#" class="controls">1</a>
     <a href="#" class="controls">2</a>
     <a href="#" class="controls">3</a>
-
+    
     <script src="jquery.min.js" /> <!-- path to jQuery -->
     <script src="jquery.slideshow.js" /> <!-- path to slideshow script -->
     <script>
