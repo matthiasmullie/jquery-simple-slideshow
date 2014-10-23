@@ -1,6 +1,6 @@
 {
   "name": "jquery-simple-slideshow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple, low-config, jQuery-based slideshow.",
   "main": "jquery.simple.slideshow.js",
   "scripts": {
