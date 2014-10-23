@@ -3,26 +3,10 @@
 This is a simple jQuery-based slideshow. It will not require a pre-defined complex HTML structure.
 All that is needed is for 1 original <img> to be added to the HTML. 2 Clones will be created at exactly the place of the original image, and will start iterating the images according to the desired config.
 
-## Options
 
-* **fadeTime** *(5000)*
-The duration for which an image will be displayed, in milliseconds
-* **fadeSpeed** *('normal')*
-The animation time during which the image will fade out, in milliseconds
-* **bindPrevious**
-jQuery element(s) that, when clicked, should display the previous image
-* **bindNext**
-jQuery element(s) that, when clicked, should display the next image
-* **bindSpecific**
-jQuery element(s) that, when clicked, should display a specific image. First element will be bound to first image, second element to second image, ...
-* **images**
-Array of paths for image to be displayed. Paths can also be defined via the slideshow element's data-images attribute.
-* **links**
-Optional array of links to make images clickable, tied by index to the array of images. Paths can also be defined via the slideshow element's data-links attribute.
-* **random** *(false)*
-Randomize the images' display order
+## Usage
 
-## Example 1
+### Example 1
 
 * 10 second display time
 * 1 second fade time
@@ -60,7 +44,7 @@ Looks like:
 </script>
 ```
 
-## Example 2
+### Example 2
 
 * Image-specific controls
 * Image paths tossed in as data-attribute
@@ -82,5 +66,33 @@ Looks like:
 </script>
 ```
 
+
+## Options
+
+Options can be passed in as a `{ key: value }` object literal. Available options are:
+
+| property     | default value | description                                                                                                                                                        |
+|--------------|:-------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| fadeTime     | 5000          | The duration for which an image will be displayed, in milliseconds                                                                                                 |
+| fadeSpeed    | 'normal'      | The animation time during which the image will fade out, in milliseconds                                                                                           |
+| bindPrevious |               | jQuery element(s) that, when clicked, should display the previous image                                                                                            |
+| bindNext     |               | jQuery element(s) that, when clicked, should display the next image                                                                                                |
+| bindSpecific |               | jQuery element(s) that, when clicked, should display a specific image. First element will be bound to first image, second element to second image, ...             |
+| images       |               | Array of paths for image to be displayed. Paths can also be defined via the slideshow element's data-images attribute                                              |
+| links        |               | Optional array of links to make images clickable, tied by index to the array of images. Paths can also be defined via the slideshow element's data-links attribute |
+| random       | false         | Randomize the images' display order                                                                                                                                |
+
+
+## Installation
+
+Install this package via [npm](https://www.npmjs.org/):
+
+```sh
+npm install jquery-simple-slideshow
+```
+
+Or simply copy jquery.simple.slideshow.js into your project.
+
+
 ## License
-simple-slideshow is [MIT](http://opensource.org/licenses/MIT) licensed.
+jquery-simple-slideshow is [MIT](http://opensource.org/licenses/MIT) licensed.
