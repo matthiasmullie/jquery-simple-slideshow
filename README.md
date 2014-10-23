@@ -32,31 +32,33 @@ Randomize the images' display order
 
 Looks like:
 
-    <img id="slideshow" src="path/to/initial/file.jpg" />
-    <a href="#" id="prev">Previous</a>
-    <a href="#" id="next">Next</a>
-    
-    <script src="jquery.min.js" /> <!-- path to jQuery -->
-    <script src="jquery.simple.slideshow.js" /> <!-- path to slideshow script -->
-    <script>
-    	$('#slideshow').simpleSlideshow({
-    		fadeTime: 10000,
-    		fadeSpeed: 1000,
-    		bindPrevious: $('#prev'), // bind button to previous image
-    		bindNext: $('#next'), // bind button to next image
-    		images: [
-    			'path/to/initial/file.jpg',
-    			'path/to/second/file.jpg',
-    			'path/to/another/file.jpg',
-    		],
-    		links: [
-    			'http://www.mullie.eu',
-    			'http://www.twitter.com/matthiasmullie',
-    			'http://www.linkedin.com/in/matthiasmullie',
-    		],
-    		random: true
-    	});
-    </script>
+```html
+<img id="slideshow" src="path/to/initial/file.jpg" />
+<a href="#" id="prev">Previous</a>
+<a href="#" id="next">Next</a>
+
+<script src="jquery.min.js" /> <!-- path to jQuery -->
+<script src="jquery.simple.slideshow.js" /> <!-- path to slideshow script -->
+<script>
+	$('#slideshow').simpleSlideshow({
+		fadeTime: 10000,
+		fadeSpeed: 1000,
+		bindPrevious: $('#prev'), // bind button to previous image
+		bindNext: $('#next'), // bind button to next image
+		images: [
+			'path/to/initial/file.jpg',
+			'path/to/second/file.jpg',
+			'path/to/another/file.jpg',
+		],
+		links: [
+			'http://www.mullie.eu',
+			'http://www.twitter.com/matthiasmullie',
+			'http://www.linkedin.com/in/matthiasmullie',
+		],
+		random: true
+	});
+</script>
+```
 
 ## Example 2
 
@@ -65,18 +67,20 @@ Looks like:
 
 Looks like:
 
-    <img id="slideshow" src="path/to/initial/file.jpg" data-images="path/to/initial/file.jpg,path/to/second/file.jpg,path/to/another/file.jpg" />
-    <a href="#" class="controls">1</a>
-    <a href="#" class="controls">2</a>
-    <a href="#" class="controls">3</a>
-    
-    <script src="jquery.min.js" /> <!-- path to jQuery -->
-    <script src="jquery.simple.slideshow.js" /> <!-- path to slideshow script -->
-    <script>
-    	$('#slideshow').simpleSlideshow({
-    		bindSpecific: $('.controls'), // bind image-specific buttons
-    	});
-    </script>
+```html
+<img id="slideshow" src="path/to/initial/file.jpg" data-images="path/to/initial/file.jpg,path/to/second/file.jpg,path/to/another/file.jpg" />
+<a href="#" class="controls">1</a>
+<a href="#" class="controls">2</a>
+<a href="#" class="controls">3</a>
+
+<script src="jquery.min.js" /> <!-- path to jQuery -->
+<script src="jquery.simple.slideshow.js" /> <!-- path to slideshow script -->
+<script>
+	$('#slideshow').simpleSlideshow({
+		bindSpecific: $('.controls'), // bind image-specific buttons
+	});
+</script>
+```
 
 ## License
-Minify is [MIT](http://opensource.org/licenses/MIT) licensed.
+simple-slideshow is [MIT](http://opensource.org/licenses/MIT) licensed.
