@@ -1,0 +1,31 @@
+{
+  "name": "jquery-simple-slideshow",
+  "version": "1.0.0",
+  "description": "A simple, low-config, jQuery-based slideshow.",
+  "main": "jquery.simple.slideshow.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthiasmullie/jquery-simple-slideshow.git"
+  },
+  "keywords": [
+    "slideshow",
+    "fade",
+    "jquery-plugin"
+  ],
+  "author": {
+    "name": "Matthias Mullie",
+    "email": "npm@mullie.eu",
+    "url": "http://www.mullie.eu/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthiasmullie/jquery-simple-slideshow/issues"
+  },
+  "homepage": "https://github.com/matthiasmullie/jquery-simple-slideshow",
+  "dependencies": {
+    "jquery": ">=1.7.0"
+  }
+}
