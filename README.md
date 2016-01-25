@@ -1,5 +1,9 @@
 # jquery-simple-slideshow
 
+[![Latest version](https://img.shields.io/npm/dt/jquery-simple-slideshow.svg)](https://www.npmjs.com/package/jquery-simple-slideshow)
+[![Downloads total](https://img.shields.io/npm/v/jquery-simple-slideshow.svg)](https://www.npmjs.com/package/jquery-simple-slideshow)
+[![License](https://img.shields.io/npm/l/jquery-simple-slideshow.svg)](https://github.com/matthiasmullie/jquery-simple-slideshow/blob/master/LICENSE)
+
 This is a simple jQuery-based slideshow. It will not require a pre-defined complex HTML structure.
 All that is needed is for 1 original <img> to be added to the HTML. 2 Clones will be created at exactly the place of the original image, and will start iterating the images according to the desired config.
 
